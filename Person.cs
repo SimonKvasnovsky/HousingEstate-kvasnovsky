@@ -31,6 +31,7 @@ namespace HousingEstate
             surname = Surname1;
             age = Age1;
         }
+        List<Person> people = new List<Person>();
         public override string ToString()
         {
             return String.Format($"{name}\n{surname}\n{age}");
