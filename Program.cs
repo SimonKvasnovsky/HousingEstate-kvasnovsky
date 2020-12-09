@@ -6,7 +6,8 @@ namespace HousingEstate
     {
         static void Main(string[] args)
         {
-            
+            Person Jozef = new Person("Jozef", "Mrkvička", 22);
+            Console.WriteLine(Jozef.ToString());
         }
     }
 }
