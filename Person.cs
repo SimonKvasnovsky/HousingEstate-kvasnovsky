@@ -10,7 +10,7 @@ namespace HousingEstate
         private string surname;
         private int age;
 
-        public string Name 
+        public string Name
         {
             get { return name; }
             set { name = value; }
@@ -24,7 +24,7 @@ namespace HousingEstate
         {
             get { return age; }
             set { age = value; }
-        }
+        }        
         public Person(string Name1, string Surname1, int Age1)
         {
             name = Name1;

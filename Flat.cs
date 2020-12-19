@@ -30,6 +30,11 @@ namespace HousingEstate
             areaOfFlat = AreaOfFlat1;
             numberOfRooms = NumberOfRooms1;
         }
+        List<Person> person = new List<Person>();
+        public void AddHabitant(Person habitant)
+        {
+            Console.WriteLine(habitant);
+        }
         public override string ToString()
         {
             return String.Format($"{flatNumber}\n{areaOfFlat}\n{numberOfRooms}");
