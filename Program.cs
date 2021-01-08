@@ -22,6 +22,7 @@ namespace HousingEstate
             flat1.AddHabitant(stefan);
 
             Console.WriteLine(flat1.GetInfoAboutAllHabitants());
+            Console.WriteLine(miro.GetInfoAboutFlat());
             
             
         }

@@ -9,6 +9,7 @@ namespace HousingEstate
         private string name;
         private string surname;
         private int age;
+        public Flat currentFlat;
 
         public string Name
         {
@@ -33,6 +34,11 @@ namespace HousingEstate
         }
         public Person() { }
         
+        public string GetInfoAboutFlat()
+        {
+            return this.currentFlat.ToString();
+        }
+
         public override string ToString()
         {
             return String.Format($"{name}\n{surname}\n{age}\n");

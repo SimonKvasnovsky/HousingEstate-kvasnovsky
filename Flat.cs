@@ -43,6 +43,7 @@ namespace HousingEstate
         public void AddHabitant(Person habitant)
         {
             Console.WriteLine(habitant);
+            habitant.currentFlat = this;
         }
         public string GetInfoAboutAllHabitants()
         {
@@ -56,6 +57,7 @@ namespace HousingEstate
                 return x;
             }
         }
+        
         public override string ToString()
         {
             return String.Format($"{flatNumber}\n{areaOfFlat}\n{numberOfRooms}\n");
