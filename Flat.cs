@@ -24,20 +24,41 @@ namespace HousingEstate
             get { return numberOfRooms; }
             set { numberOfRooms = value; }
         }
+        List<Person> person = new List<Person>();
         public Flat(int FlatNumber1, int AreaOfFlat1, int NumberOfRooms1)
         {
             flatNumber = FlatNumber1;
             areaOfFlat = AreaOfFlat1;
             numberOfRooms = NumberOfRooms1;
+
+            person = new List<Person>
+            {
+                new Person("Jozef", "Mrkvička", 22),
+                new Person("Miro", "Silný", 20),
+                new Person("Štefan", "Chudý", 25)
+
+        };
         }
-        List<Person> person = new List<Person>();
+        
         public void AddHabitant(Person habitant)
         {
             Console.WriteLine(habitant);
         }
+        public string GetInfoAboutAllHabitants()
+        {
+            {
+                string x = "";
+                foreach (Person o in person)
+                {
+                    x += o.ToString();
+                    x += "\n";
+                }
+                return x;
+            }
+        }
         public override string ToString()
         {
-            return String.Format($"{flatNumber}\n{areaOfFlat}\n{numberOfRooms}");
+            return String.Format($"{flatNumber}\n{areaOfFlat}\n{numberOfRooms}\n");
         }
 
 
